@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Form</title>
+    <link rel="stylesheet" href="Styless.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav-bar">
+            <img src="spell logo no background.png" alt="Nature Logo">
+            <div class="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li id="login-nav">Login</li>
+                </ul>
+            </div>
+        </div>
+        <div class="outer-border">
+            <div class="container">
+                <div class="image1">
+                    <img src="wp6958687.jpg" alt="Sign Up Image">
+                </div>
+                <div class="login-form">
+                    <div id="signup-form-front">
+                        <h2>Create Account</h2>
+                        <form id="signupForm" novalidate>
+                            <label for="Name">Enter Your Name</label>
+                            <input type="text" id="Name">
+
+                            <label for="UserName">Username</label>
+                            <input type="text" id="UserName">
+
+                            <label for="Password">Password</label>
+                            <input type="password" id="Password">
+
+                            <label for="CPassword">Confirm Password</label>
+                            <input type="password" id="CPassword">
+
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob">
+
+                            <label for="psp">Passport size Photo</label>
+                            <input type="file" id="psp" accept=".jpg, .jpeg, .png">
+
+                            <div class="gender-group">
+                                <label class="G1">Gender:</label>
+                                <div class="radio-options">
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                    <input type="radio" id="other" name="gender" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="check-box">
+                                    <input type="checkbox" id="P1" value="P1">
+                                    <label for="P1"><a href="blank">Terms & Conditions</a></label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                            <div class="divider">
+                                <span>or</span>
+                            </div>
+                            <h3 class="already">Already have an account?<a href="#" id="showLogin">Login</a></h3>
+                        </form>
+                    </div>
+                    <div id="login-form-back">
+                        <h1>Welcome Back</h1>
+                        <h4 class="WB">Please Enter Your Details</h4>
+                        <form id="loginForm" novalidate>
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password">
+                            <button type="submit" class="btn">Login</button>
+                            <h3 class="already">Don't have an account?<a href="#" id="showSignup">Sign Up</a></h3>
+                            <div class="divider">
+                                <span>or</span>
+                            </div>
+                            <div class="sigin-options">
+                            <div class="google">
+                                <img src="google-logo-google-search-search-engine-optimization-google-images-png-favpng-mrjKbWHacks0WiKXmVVZugyri-removebg-preview.png" alt="google logo">
+                                <h3><a href="https://accounts.google.com/signin" target="_blank">Sign with Google</a></h3>
+                            </div>
+                            <div class="facebook">
+                                <img src="facebook-logo-3d-social-media-icon-isolated_47987-11965.png" alt="facebook logo">
+                                <h3><a href="https://www.facebook.com/" target="_blank">Sign with Facebook</a></h3>
+                            </div>
+                            <div class="X">
+                                <img src="transparent-x-logo-multiplication-symbol-math-program-science-black-button-with-white-x-symbol-for-1710889406911-removebg-preview.png" alt="X logo">
+                                <h3><a href="https://x.com/i/flow/login?lang=en" target="_blank">Sign with X</a></h3>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
